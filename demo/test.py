@@ -15,7 +15,9 @@ def parse_args():
 def upload_data(args):
     
     if args.dry_run:
-        print(args.files)
+        print(args.text_file)
+        print(args.username)
+        print(args.password)
         return
     
     print("NOT DRY RUN")
