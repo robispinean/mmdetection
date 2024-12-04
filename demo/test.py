@@ -17,8 +17,8 @@ def upload_data(args):
     if args.dry_run:
         with open(args.text_file, 'r') as file:
         # Loop through each line in the file and print it
-        for line in file:
-            print(line.strip())  # Use .strip() to remove any leading/trailing whitespace or newline characters
+            for line in file:
+                print(line.strip())  # Use .strip() to remove any leading/trailing whitespace or newline characters
         print(args.text_file)
         print(args.username)
         print(args.password)
