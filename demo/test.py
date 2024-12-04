@@ -7,6 +7,8 @@ def parse_args():
     parser = argparse.ArgumentParser(description='MMDetection video demo')
     parser.add_argument('--dry-run', action="store_true", help='dryrun')
     parser.add_argument('--text-file', type=Path, help='files')
+    parser.add_argument('--username', type=Path, help='username')
+    parser.add_argument('--password', type=Path, help='password')
     args = parser.parse_args()
     return args
 
